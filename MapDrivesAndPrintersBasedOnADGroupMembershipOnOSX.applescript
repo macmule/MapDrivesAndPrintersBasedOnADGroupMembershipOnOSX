@@ -13,7 +13,7 @@
 -------------------------------
 
 -- Get the logged in users username
-set loggedInUser to do shell script "whoami" set accountType to do shell script "dscl . -read /Users/" & loggedInUser & " | grep UniqueID | cut -c 11-" 
+set loggedInUser to do shell script "whoami"
 
 -- Get the Users account UniqueID
 set accountType to do shell script "dscl . -read /Users/" & loggedInUser & " | grep UniqueID | cut -c 11-"
